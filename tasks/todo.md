@@ -907,8 +907,8 @@ GitHub push plan:
 - [x] Add a root `README.md` that points reviewers to the final submission package and extracted source folders.
 - [x] Confirm no candidate tracked file exceeds GitHub's individual file limit.
 - [x] Re-run lightweight submission tests before committing.
-- [ ] Commit the prepared assignment files.
-- [ ] Push `main` to `https://github.com/StaffordHo/BeeX.git`.
+- [x] Commit the prepared assignment files.
+- [x] Push `main` to `https://github.com/StaffordHo/BeeX.git`.
 
 GitHub push review:
 
@@ -924,6 +924,12 @@ GitHub push review:
   - raw `*.pt`, `*.pth`, and `*.ckpt` checkpoints
   - exploratory `outputs*` folders
 - The final submission zip is intentionally tracked because it is the packaged handoff artifact.
+- Initial commit created:
+  - `4ff8fe9 Add BeeX robotics assignment submission`
+- Push result:
+  - `main` pushed to `https://github.com/StaffordHo/BeeX.git`
+  - Local `main` now tracks `origin/main`.
+  - GitHub warned that `beex_submission.zip` is larger than the recommended `50 MB`, but the push succeeded because it is below the hard individual-file limit.
 - Verification before commit:
   - Task 1 submission local tests passed.
   - Task 2 submission unit tests passed, `7` tests.
