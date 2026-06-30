@@ -1,0 +1,49 @@
+BeeX Task 3: 3D Computer Vision Answer
+
+Method:
+- I estimated each camera projection matrix with normalized DLT.
+- I decomposed each projection matrix into K, R, and camera center using a numpy-only RQ decomposition.
+- I triangulated the red feature point with a linear SVD solve.
+
+Red feature point XYZ in world ENU metres:
+[0.993713, 2.990969, 0.470963]
+
+camera_1:
+Intrinsic matrix K:
+  [1384.092916, 1.955734, 627.497035]
+  [-0.000000, 1390.367473, 367.395058]
+  [-0.000000, -0.000000, 1.000000]
+Rotation matrix R:
+  [0.999970, -0.000375, 0.007692]
+  [0.000434, 0.999970, -0.007744]
+  [-0.007689, 0.007747, 0.999940]
+Camera position XYZ in world ENU metres:
+[-1.015553, 0.977322, -9.918187]
+Rotation determinant: 1.000000000000
+Rotation orthogonality error: 2.221e-16
+Max blue reprojection error: 0.082956 px
+Mean blue reprojection error: 0.062540 px
+Red reprojection error: 0.251117 px
+
+camera_2:
+Intrinsic matrix K:
+  [928.181300, 0.955467, 640.338932]
+  [-0.000000, 928.096173, 356.915589]
+  [-0.000000, -0.000000, 1.000000]
+Rotation matrix R:
+  [0.707866, -0.706345, -0.001247]
+  [0.706346, 0.707867, 0.000198]
+  [0.000743, -0.001021, 0.999999]
+Camera position XYZ in world ENU metres:
+[1.395927, -0.016399, -9.874015]
+Rotation determinant: 1.000000000000
+Rotation orthogonality error: 9.774e-16
+Max blue reprojection error: 0.330400 px
+Mean blue reprojection error: 0.249511 px
+Red reprojection error: 0.376869 px
+
+Run instruction:
+python3 task3_cv.py
+
+Dependency note:
+This script uses numpy only for numerical computation and does not call OpenCV.

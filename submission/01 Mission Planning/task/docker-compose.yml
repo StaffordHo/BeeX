@@ -1,0 +1,20 @@
+services:
+  task1:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: beex-task1-noetic:latest
+    container_name: beex-task1-noetic
+    network_mode: host
+    ipc: host
+    environment:
+      DISPLAY: ${DISPLAY}
+      QT_X11_NO_MITSHM: "1"
+      ROS_MASTER_URI: http://127.0.0.1:11311
+      ROS_HOSTNAME: 127.0.0.1
+    volumes:
+      - .:/work
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    working_dir: /work
+    stdin_open: true
+    tty: true

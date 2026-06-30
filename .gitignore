@@ -1,0 +1,46 @@
+# Local environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.codex/
+.agents/
+
+# ROS/catkin generated folders
+build/
+devel/
+install/
+log/
+**/build/
+**/devel/
+**/install/
+**/log/
+
+# Native binaries and temporary build outputs
+**/bx_grid_world
+*.o
+*.so
+*.a
+
+# Provided/private datasets and extracted data
+interview_dataset/
+interview_dataset.zip
+*.zip
+!beex_submission.zip
+
+# ML checkpoints and exploratory outputs
+*.pt
+*.pth
+*.ckpt
+outputs*/
+outputs_*/
+!**/outputs_cpu_anode/
+**/outputs_cpu_anode/*.pt
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

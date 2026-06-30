@@ -1,0 +1,10 @@
+# Install PyTorch separately first. For a CPU/smoke-test install, use:
+#   pip install -r requirements-cpu.txt
+# For CUDA training, use the official PyTorch command for your CUDA version,
+# then install this file. Keeping torch out of this file prevents pip from
+# pulling a very large CUDA dependency stack by accident.
+numpy>=1.26.0,<3.0
+tqdm>=4.66.4,<5.0
+matplotlib>=3.9.0,<4.0
+opencv-python-headless>=4.10.0.84,<5.0
+segmentation-models-pytorch>=0.3.3,<0.5

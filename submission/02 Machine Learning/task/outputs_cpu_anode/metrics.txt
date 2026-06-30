@@ -1,0 +1,14 @@
+BeeX Task 2 Metrics
+
+Best validation epoch: 4
+Best validation mean target IoU: 0.4944
+
+Validation:
+anode: IoU=0.3849, F1=0.5558
+member: IoU=0.6040, F1=0.7531
+
+Test:
+anode: IoU=0.5570, F1=0.7155
+member: IoU=0.5694, F1=0.7256
+
+Test predicted pixels: {'background': 8358904, 'anode': 336, 'member': 20152}

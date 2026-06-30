@@ -1,0 +1,293 @@
+{
+  "dataset_summary": {
+    "num_images": 1111,
+    "num_annotations": 1363,
+    "annotation_counts": {
+      "member": 1251,
+      "anode": 112
+    },
+    "image_presence": {
+      "member": 884,
+      "background": 115,
+      "anode+member": 112
+    }
+  },
+  "split_summary": {
+    "train": {
+      "num_images": 777,
+      "image_presence": {
+        "member": 618,
+        "anode": 78,
+        "background": 81
+      }
+    },
+    "validation": {
+      "num_images": 167,
+      "image_presence": {
+        "member": 133,
+        "background": 17,
+        "anode": 17
+      }
+    },
+    "test": {
+      "num_images": 167,
+      "image_presence": {
+        "member": 133,
+        "anode": 17,
+        "background": 17
+      }
+    }
+  },
+  "class_names": [
+    "background",
+    "anode",
+    "member"
+  ],
+  "best_epoch": 4,
+  "best_mean_iou": 0.4944408994895265,
+  "validation_metrics": {
+    "anode": {
+      "iou": 0.3848684210526316,
+      "f1": 0.5558194774346793
+    },
+    "member": {
+      "iou": 0.6040133779264214,
+      "f1": 0.7531276063386155
+    }
+  },
+  "validation_pixel_counts": {
+    "target_pixels": {
+      "background": 8353726,
+      "anode": 212,
+      "member": 25454
+    },
+    "predicted_pixels": {
+      "background": 8359075,
+      "anode": 209,
+      "member": 20108
+    }
+  },
+  "last_validation_metrics": {
+    "anode": {
+      "iou": 0.28861154446177845,
+      "f1": 0.44794188861985473
+    },
+    "member": {
+      "iou": 0.6565477151622799,
+      "f1": 0.7926698508626572
+    }
+  },
+  "last_validation_pixel_counts": {
+    "target_pixels": {
+      "background": 8353726,
+      "anode": 212,
+      "member": 25454
+    },
+    "predicted_pixels": {
+      "background": 8352937,
+      "anode": 614,
+      "member": 25841
+    }
+  },
+  "test_loss": 0.24543206801726705,
+  "test_metrics": {
+    "anode": {
+      "iou": 0.556989247311828,
+      "f1": 0.7154696132596685
+    },
+    "member": {
+      "iou": 0.56940366508049,
+      "f1": 0.7256306044771305
+    }
+  },
+  "test_pixel_counts": {
+    "target_pixels": {
+      "background": 8352653,
+      "anode": 388,
+      "member": 26351
+    },
+    "predicted_pixels": {
+      "background": 8358904,
+      "anode": 336,
+      "member": 20152
+    }
+  },
+  "final_metrics": {
+    "anode": {
+      "iou": 0.556989247311828,
+      "f1": 0.7154696132596685
+    },
+    "member": {
+      "iou": 0.56940366508049,
+      "f1": 0.7256306044771305
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8284894224917061,
+      "valid_loss": 0.3821496792425889,
+      "metrics": {
+        "anode": {
+          "iou": 0.02909090909090909,
+          "f1": 0.05653710247349823
+        },
+        "member": {
+          "iou": 0.45309420575482856,
+          "f1": 0.6236267462362675
+        }
+      },
+      "pixel_counts": {
+        "target_pixels": {
+          "background": 8353726,
+          "anode": 212,
+          "member": 25454
+        },
+        "predicted_pixels": {
+          "background": 8360537,
+          "anode": 71,
+          "member": 18784
+        }
+      },
+      "mean_target_iou": 0.24109255742286884
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5018811556666247,
+      "valid_loss": 0.2577537427340368,
+      "metrics": {
+        "anode": {
+          "iou": 0.09771573604060914,
+          "f1": 0.17803468208092485
+        },
+        "member": {
+          "iou": 0.6013773421019978,
+          "f1": 0.7510751230095696
+        }
+      },
+      "pixel_counts": {
+        "target_pixels": {
+          "background": 8353726,
+          "anode": 212,
+          "member": 25454
+        },
+        "predicted_pixels": {
+          "background": 8351706,
+          "anode": 1518,
+          "member": 26168
+        }
+      },
+      "mean_target_iou": 0.34954653907130345
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.35769005379804764,
+      "valid_loss": 0.2241021691697716,
+      "metrics": {
+        "anode": {
+          "iou": 0.3092224231464738,
+          "f1": 0.4723756906077348
+        },
+        "member": {
+          "iou": 0.6220268689518273,
+          "f1": 0.7669748027710396
+        }
+      },
+      "pixel_counts": {
+        "target_pixels": {
+          "background": 8353726,
+          "anode": 212,
+          "member": 25454
+        },
+        "predicted_pixels": {
+          "background": 8358575,
+          "anode": 512,
+          "member": 20305
+        }
+      },
+      "mean_target_iou": 0.46562464604915055
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.25737332242704414,
+      "valid_loss": 0.23581702806232097,
+      "metrics": {
+        "anode": {
+          "iou": 0.3848684210526316,
+          "f1": 0.5558194774346793
+        },
+        "member": {
+          "iou": 0.6040133779264214,
+          "f1": 0.7531276063386155
+        }
+      },
+      "pixel_counts": {
+        "target_pixels": {
+          "background": 8353726,
+          "anode": 212,
+          "member": 25454
+        },
+        "predicted_pixels": {
+          "background": 8359075,
+          "anode": 209,
+          "member": 20108
+        }
+      },
+      "mean_target_iou": 0.4944408994895265
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.16655316140612575,
+      "valid_loss": 0.17384035080516197,
+      "metrics": {
+        "anode": {
+          "iou": 0.28861154446177845,
+          "f1": 0.44794188861985473
+        },
+        "member": {
+          "iou": 0.6565477151622799,
+          "f1": 0.7926698508626572
+        }
+      },
+      "pixel_counts": {
+        "target_pixels": {
+          "background": 8353726,
+          "anode": 212,
+          "member": 25454
+        },
+        "predicted_pixels": {
+          "background": 8352937,
+          "anode": 614,
+          "member": 25841
+        }
+      },
+      "mean_target_iou": 0.47257962981202917
+    }
+  ],
+  "args": {
+    "dataset_dir": "interview_dataset",
+    "zip_path": "interview_dataset.zip",
+    "output_dir": "outputs_cpu_anode",
+    "image_size": 224,
+    "epochs": 5,
+    "batch_size": 2,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "val_size": 0.15,
+    "test_size": 0.15,
+    "seed": 42,
+    "num_workers": 0,
+    "device": "cpu",
+    "max_samples": null,
+    "smoke": false,
+    "no_pretrained": true,
+    "dice_weight": 0.5,
+    "anode_dice_weight": 0.25,
+    "anode_class_weight_multiplier": 3.0,
+    "anode_sample_weight": 6.0,
+    "member_sample_weight": 1.0,
+    "background_sample_weight": 0.5,
+    "checkpoint": null,
+    "eval_only": false
+  }
+}

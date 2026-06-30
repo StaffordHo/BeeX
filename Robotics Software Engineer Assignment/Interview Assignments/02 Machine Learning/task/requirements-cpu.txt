@@ -1,0 +1,10 @@
+# CPU-only dependency set for smoke tests and correctness checks.
+# This avoids pulling the large CUDA/NVIDIA wheel stack on machines where disk
+# space is tight. If these Python 3.13 wheels are unavailable in your local
+# mirror, create a Python 3.11 environment and rerun this file.
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
+
+torch==2.11.0+cpu
+torchvision==0.26.0+cpu
+-r requirements.txt
